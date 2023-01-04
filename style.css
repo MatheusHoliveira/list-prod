@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito";
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 4rem;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	flex: 4;
+	/* align-items: center; */
+}
+
+.leftMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+	padding: 13px;
+}
+img:hover {
+	opacity: 0.7;
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	overflow: auto;
+	/* position: relative; */
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	padding: 13px;
+}
+
+img {
+	width: 150px;
+	border-radius: 10px;
+}
+
+input {
+	border: 1px solid #dcdcdc;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+@media (max-width: 950px) {
+	body {
+		overflow-x: hidden;
+	}
+	.leftMenu {
+		position: fixed;
+	}
+
+	.products {
+		position: absolute;
+		margin-left: 5rem;
+		height: 400px;
+		overflow-y: auto;
+		/* padding: 13px; */
+	}
+}
